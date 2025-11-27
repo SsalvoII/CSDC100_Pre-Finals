@@ -1,1 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">ISMSI</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="faq.html" class="nav-link">GenAI FAQs</a></li>
+            <li class="nav-item"><a href="ethics.html" class="nav-link">AI Ethics</a></li>
+            <li class="nav-item"><a href="Analogy.html" class="nav-link">Analogy</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
+          </ul>
+
+          <!-- Dark Mode Toggle -->
+          <button id="themeToggle" class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 w-100 w-lg-auto">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="p-5">
+      <div class="container">
+        
+        <div class="custom-box p-4">
+          <h2 class="mb-3">Contacts</h2>
+          <p>
+            <h6>Email: </h6> <a>ssalvoii@gbox.adnu.edu.ph</a><br>
+            <br>
+            <h6>Number: </h6> <a>#09608515430</a><br><br>
+            
+
+          </p>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center position-relative p-5 mt-4">
+      <div class="container">
+        <p class="lead mb-0">Copyright &copy; 2025 ISMSI</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Dark Mode Script -->
+    <script>
+      const body = document.body;
+      const toggleBtn = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.classList.replace("bi-sun-fill", "bi-moon-fill");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
 
