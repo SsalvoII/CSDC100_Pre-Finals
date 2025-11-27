@@ -1,1 +1,240 @@
+/* GLOBAL DARK MODE BASE*/
+.dark-mode {
+    background-color: hsl(0, 0%, 2.5%) !important;
+    color: white !important;
+}
+
+
+
+.introimg{
+    margin: 10px ;
+    padding: 10px;
+}
+
+.col-md {
+    padding: 1rem !important;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7 !important;
+    color: white !important;
+}
+
+/* DARK MODE — Navbar + Footer */
+.dark-mode .navbar,
+.dark-mode footer {
+    background-color: #000 !important;
+}
+
+/* DARK MODE — Text + Links */
+.dark-mode a,
+.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+/*  DARK MODE — Cards */
+.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: white !important;
+    border-color: #333 !important;
+}
+
+/* DARK MODE — Buttons */
+.dark-mode .btn-primary {
+    background-color: #0d6efd !important; /* Keep Bootstrap blue */
+}
+
+/*HERO SECTION (WELCOME SECTION)
+   Light Mode Default */
+.hero-section {
+    background-color: #f8f9fa;  /* Light gray / near white */
+    color: #212529;             /* Dark text */
+}
+
+/* DARK MODE — Hero Section */
+.dark-mode .hero-section {
+    background-color: #1a1a1a; /* Dark */
+    color: #ffffff;            /* Light text */
+}
+
+.btn-outline-light:hover {
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+}
+
+.dark-mode .btn-outline-light:hover {
+    background-color: #f8f9fa !important;
+    color: #000 !important;
+    border-color: #f8f9fa !important;
+}
+
+/*BOX CARDS (artist/game/youtuber)
+   Light Mode Default*/
+.card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*DARK MODE — Forms (Optional future-proofing) */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #1e1e1e !important;
+    color: white !important;
+    border-color: #555 !important;
+}
+
+/*DARK MODE TOGGLE BUTTON*/
+#themeToggle {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px !important;
+}
+
+/* Icon inside toggle */
+#themeToggle i {
+  font-size: 1.2rem;
+}
+
+/* Desktop version — pill button */
+@media (min-width: 992px) {
+    #themeToggle {
+        padding: 6px 12px;
+        border-radius: 20px;
+    }
+}
+
+/*SMOOTH TRANSITIONS FOR THEME SWITCHING */
+body,
+.navbar,
+footer,
+.hero-section,
+.card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.showcase-img {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+}
+
+.box{
+    white-space: nowrap;
+}
+.box p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+    text-align: justify;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6.7px;
+    background: #e3edf7;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size:18px ;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before{
+       content: '+';
+       margin-right:10px ;
+       font-size: 24px;
+       font-weight: 600;
+}
+    
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 2000px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before{
+    content: '-';
+}
+.content{
+    text-align: justify;
+}
+
+/* DARK MODE — Accordion */
+.dark-mode .accordion li {
+    background: #1e1e1e !important;
+    color: white !important;
+}
+
+.dark-mode .accordion label {
+    color: white !important;
+}
+
+.dark-mode .accordion .content {
+    color: #ddd !important;
+}
+/* ----------------------------- */
+/*  OUTER STYLISH BOX            */
+/* ----------------------------- */
+.custom-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border: 1px solid #e5e5e5;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode outer box */
+.dark-mode .custom-box {
+    background: #0f0f0f;
+    border-color: #333;
+    color: white;
+    box-shadow: 0 4px 25px rgba(255,255,255,0.05);
+}
+
+/* ----------------------------- */
+/*  INNER TEXT BOX               */
+/* ----------------------------- */
+.inner-box {
+    background: #f5f5f5;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height: 150px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode inner box */
+.dark-mode .inner-box {
+    background: #1a1a1a;
+    border-color: #444;
+    color: #f1f1f1;
+}
 
