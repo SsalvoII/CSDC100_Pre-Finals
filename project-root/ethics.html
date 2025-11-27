@@ -1,1 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Ethics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ISMSI</a>
+
+<button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">GenAI FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="ethics.html" class="nav-link">AI Ethics</a>
+            </li>
+            <li class="nav-item">
+              <a href="Analogy.html" class="nav-link">Analogy</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <!--  Dark Mode Toggle -->
+          <button id="themeToggle" class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 w-100 w-lg-auto">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="accordion">
+      <li>
+        <input type="radio" name="accordion" id="ethicac1" checked>
+        <label for="ethicac1">Responsible use in the academe</label>
+        <div class="content">
+        In academic environments, responsible use of generative AI demands treating it as a supportive tool rather than a replacement for human intellectual effort, ensuring that core learning objectives like critical thinking, analysis, and originality remain central to education. Institutions like universities often establish specific policies requiring disclosure of AI usage in assignments, research papers, or exams to maintain transparency and uphold academic integrity standards. For instance, educators must communicate clear guidelines in syllabi, specifying when and how AI can be employed, such as for brainstorming ideas or drafting outlines, but prohibiting its use for final submissions without significant human revision. Students bear the responsibility to engage deeply with AI outputs, using them to enhance rather than circumvent learning processes, which fosters genuine skill development over rote reliance. Ethical frameworks from organizations like UNESCO emphasize promoting AI literacy among faculty and learners, enabling them to understand model limitations and potential errors early in the process. This approach prevents misuse while leveraging AI for personalized tutoring, accessibility aids for diverse learners, and accelerating research discovery.Violations of these principles can lead to disciplinary actions, underscoring the need for ongoing training and policy updates as AI evolves. Ultimately, responsible academic AI use balances innovation with preserving the foundational values of scholarship, ensuring technology amplifies human potential without undermining trust in educational outcomes. </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="ethicac2">
+        <label for="ethicac2">Avoiding plagiarism and misuses</label>
+        <div class="content">
+        Avoiding plagiarism and misuse with generative AI in academia involves rigorous practices to ensure all submitted work reflects the user's original contributions and properly attributes any AI assistance, preventing the unethical representation of machine-generated content as solely human effort. Plagiarism risks arise because AI models trained on vast internet data can inadvertently reproduce phrases, structures, or ideas from existing sources, making detection challenging even with tools like Turnitin. Best practices include always paraphrasing, expanding, or integrating AI suggestions with personal insights, followed by running content through multiple plagiarism checkers to confirm originality. Citation standards, such as those from APA or MLA, now recommend explicit acknowledgment of AI tools—e.g., "Content generated with assistance from ChatGPT (OpenAI, 2025)"—treating them like human collaborators. Misuse extends to fabricating data, generating entire essays without comprehension, or using AI to bypass assignment restrictions, which erodes personal growth and institutional credibility. Faculty can design authentic assessments, like process portfolios showing drafts and revisions, to deter shortcuts and verify student engagement. Ethical guidelines stress intent: unintentional overlap from AI requires correction, while deliberate deception warrants penalties. By prioritizing these steps, academics safeguard intellectual property rights, promote honest scholarship, and model integrity for future professionals.      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="ethicac3">
+        <label for="ethicac3">Accuracy and verification of AI outputs</label>
+        <div class="content">
+        Accuracy and verification of AI outputs represent a cornerstone of ethical AI use, as generative models frequently produce "hallucinations"—confident but factually incorrect information—due to their pattern-matching nature rather than true comprehension of reality. In academia, users must cross-check every claim, statistic, citation, or reference against peer-reviewed journals, primary sources, or reputable databases like PubMed or Google Scholar, since AI cannot distinguish truth from plausible fiction. For example, AI might invent non-existent studies or misattribute quotes, leading to retracted papers if unverified; thus, protocols demand tracing every AI-suggested source manually. Verification processes include documenting prompts used, comparing outputs across multiple AI models for consistency, and consulting subject experts for complex topics. Educational institutions reinforce this by requiring students to submit verification logs or explain their fact-checking methods during oral defenses. Tools like FactCheck.org or academic librarians aid in debunking errors, while fostering skepticism trains users to question AI confidently. Limitations persist—AI lacks real-time updates and contextual nuance—but rigorous verification upholds research reliability, prevents misinformation spread, and maintains public trust in scholarly work. This practice transforms AI from a potential liability into a reliable accelerator when paired with human diligence.         </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="ethicac4">
+        <label for="ethicac4">Bias and fairness</label>
+        <div class="content">
+        Bias and fairness in generative AI pose profound challenges in academia, as models trained on skewed internet data often perpetuate stereotypes, underrepresent marginalized groups, or amplify cultural hegemonies embedded in historical texts. For instance, prompts about leadership might default to male, Western figures, reflecting training imbalances rather than objective reality, which can skew research findings or teaching materials. Ethical mitigation requires diverse prompt engineering—specifying inclusive perspectives—and post-generation audits using bias detection tools like Hugging Face's fairness metrics to quantify and adjust disparities. Academics must contextualize outputs, supplementing with voices from underrepresented demographics to ensure equitable representations. Institutional guidelines advocate dataset transparency from AI providers and interdisciplinary reviews to flag fairness issues early. Broader implications include avoiding discriminatory applications, such as biased grading algorithms or hiring simulations in case studies. Promoting fairness involves AI literacy programs teaching debiasing techniques, like fine-tuning models on balanced data, and collaborative policies fostering accountability. While complete elimination of bias remains elusive due to data imperfections, proactive fairness strategies enable AI to support inclusive scholarship, counter systemic inequities, and advance knowledge production that truly serves diverse societies.        </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="ethicac5">
+        <label for="ethicac5">Recommended Guidelines</label>
+        <div class="content">
+<h3>Recommended Guidelines for Ethical AI Use</h3>
+<h6 class="bi bi-circle-fill">  Use AI as an assistant, not a substitute for critical thinking and original work.</h6>
+<h6 class="bi bi-circle-fill">  Familiarize yourself with institutional policies and cite AI tools consistently and transparently.</h6>
+<h6 class="bi bi-circle-fill">  Always review, revise, and personalize AI-generated content to fit your unique voice and context.</h6>
+<h6 class="bi bi-circle-fill">  Verify all AI outputs with legitimate sources before incorporation.</h6>
+<h6 class="bi bi-circle-fill">  Use plagiarism detection tools proactively and avoid deceptive practices to mask AI involvement.</h6>
+<h6 class="bi bi-circle-fill">  Educate yourself and others on AI’s capabilities, limitations, biases, and ethical challenges.</h6>
+<h6 class="bi bi-circle-fill">  Maintain human oversight and accountability at every stage of the AI-assisted work process.</h6>
+<h6 class="bi bi-circle-fill">  Promote fairness by actively countering AI bias and advocating inclusive content creation.</h6>
+<br></br>
+These guidelines build an ethical framework that supports academic integrity, enhances learning, and leverages AI responsibly for research and education.​
+This expanded explanation ensures thorough understanding of ethical AI use in academia, covering key areas such as responsibility, plagiarism prevention, verification, bias, fairness, and practical guidance.
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="accordion" id="ethicsref">
+        <label for="ethicsref">References</label>
+        <div class="content">
+            https://www.sap.com/products/artificial-intelligence/what-is-generative-ai.html​<br>
+
+            https://aws.amazon.com/what-is/generative-ai/​<br>
+
+            https://www.coursera.org/articles/what-is-generative-ai​<br>
+
+            https://www.imperial.ac.uk/admin-services/library/learning-support/generative-ai-guidance/​<br>
+
+            https://www.huit.harvard.edu/ai/guidelines​<br>
+
+            https://www.cmu.edu/teaching/technology/aitools/index.html​<br>
+
+            https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research​<br>
+
+            https://www.feu.edu.ph/student-guidelines-on-the-use-of-general-artificial-intelligence/​<br>
+
+            https://information-services.ed.ac.uk/computing/comms-and-collab/elm/generative-ai-guidance-for-students/using-generative​<br>
+
+            https://www.ox.ac.uk/students/life/it/guidance-safe-and-responsible-use-gen-ai-tools​ <br>     </li>
+
+
+
+    </ul>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center position-relative p-5 mt-4">
+      <div class="container">
+        <p class="lead mb-0">Copyright &copy; 2025 ISMSI</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+<!-- 🌙 Dark Mode Script -->
+    <script>
+      const body = document.body;
+      const toggleBtn = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.classList.replace("bi-sun-fill", "bi-moon-fill");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
 
