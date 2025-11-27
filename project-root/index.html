@@ -1,1 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSDC100_Pre-Finals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ISMSI</a>
+
+<button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">GenAI FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="ethics.html" class="nav-link">AI Ethics</a>
+            </li>
+            <li class="nav-item">
+              <a href="Analogy.html" class="nav-link">Analogy</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <!--  Dark Mode Toggle -->
+          <button id="themeToggle" class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 w-100 w-lg-auto">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+ <!-- Showcase -->
+  <section class="hero-sections p-5 p-lg-5 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1>Welcome to <span class="text-warning">
+                    ISMSI
+                </span></h1>
+                <p class="lead my-4" id="intro">
+                    <h6>The purpose of a website on GenAI FAQs & Ethical Use of AI is to educate visitors about generative artificial intelligence by providing clear answers to common questions such as what generative AI is, how it functions, what tools exist, and its strengths and limitations. </h6><br>
+                    
+                </p>
+                <a href="#FAQSAnch" class="btn btn-primary btn-lg">
+                 Get Reading
+                </a>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block"  src="website images/lightbulbbs-nobg.png" alt="" id="introimg">
+        </div>
+    </div>
+  </section>
+  
+  <!-- NewsLetter -->
+   <section class="bg-primary text-light p-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0"></h3>
+        </div>
+    </div>
+   </section>
+
+   <!-- Boxes -->
+    <section class="p-5">
+        <div class="box">
+            <div class="row text-center g-4">
+
+              <!-- FAQS CARD -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-archive"></i>
+                            </div>
+                            <h3 class="card-title mb-3" id="FAQSAnch">
+                                 FAQS
+                            </h3> 
+                           <p>
+                            Generative AI is a sophisticated form of artificial intelligence designed to create original content...
+                           </p>
+                               <div class="collapse" id="faq1">
+                             <p>
+                              such as text, images, audio, and videos by learning patterns and correlations within large datasets. Unlike traditional AI, which might 
+                              focus on classification or prediction, generative AI synthesizes new data that has never existed before, appearing creative in its output. 
+                              The technology works by encoding vast amounts of information into a structured format, often using vector spaces, which represent the relationships within data.
+                              When prompted, generative AI decodes this information to produce new, contextually relevant content, ranging from conversational text to photorealistic images. 
+                              Examples include applications like ChatGPT, which can hold human-like conversations, and DALL-E, which generates images based on textual descriptions. 
+                              Beyond creative generation, generative AI helps summarize vast amounts of information, automate repetitive tasks, and personalize user experiences by tailoring outputs to individual needs. 
+                              This makes it valuable across industries such as marketing, healthcare, entertainment, and software development. 
+                              However, the core of generative AI is its ability to generalize and innovate based on learned data, enabling a wide range of functions beyond simple data retrieval or rule-based automation.                            </p>
+                            <a href="faq.html" class="btn btn-outline-light">Read more</a>
+                              </div>
+                              <button class="btn btn-primary mt-3" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                            Show more
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- ETHICS CARD -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                 Ethics
+                            </h3>                            
+                           <p>
+                            In academic settings, responsible use of generative AI requires a clear understanding that AI is a tool to assist—not replace—human expertise and critical thinking....
+                           </p>
+                               <div class="collapse" id="ethics1">
+                             <p>
+                               Educators and students must use AI to enhance their research and writing processes while maintaining integrity and intellectual ownership of their work. 
+                               Responsible users conduct their own research and critically evaluate AI-generated outputs rather than accepting them blindly. 
+                               Following university or journal policies on declaring AI use is essential to uphold academic standards and avoid misconduct. 
+                               Educators play a key role in guiding students on how to use AI ethically and transparently to support learning and scholarship without compromising originality or rigor.
+                            </p>
+                            <a href="ethics.html" class="btn btn-outline-light ">Read more</a>
+                        </div>
+                         <button class="btn btn-primary mt-3" data-bs-toggle="collapse"
+                                data-bs-target="#ethics1">
+                            Show more
+                        </button>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Analogy CARD -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-camera"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                 Analogy
+                            </h3> 
+                           <p>
+                            Generative AI is a sophisticated form of artificial intelligence designed to create original content...
+                           </p>
+                               <div class="collapse" id="Analogy1">
+                             <p>
+                                It analyzes huge datasets to learn patterns, relationships, and structures.  
+                                Using neural networks — especially transformers — it can produce realistic
+                                outputs such as essays, images, voices, and even code.  
+                                It does this by predicting the next most likely piece of information.
+                            </p>
+                            <a href="Analogy.html" class="btn btn-outline-light ">Read more</a>
+                        </div>
+                         <button class="btn btn-primary mt-3" data-bs-toggle="collapse"
+                                data-bs-target="#Analogy1">
+                            Show more
+                        </button>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+<footer class="bg-dark text-white text-center position-relative p-5 mt-4">
+    <div class="container">
+        <p class="lead">Copyright &copy; 2025 ISMSI</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+    </div>
+    </footer>
+
+    
+    <!-- 🌙 Dark Mode Script -->
+    <script>
+      const body = document.body;
+      const toggleBtn = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.classList.replace("bi-sun-fill", "bi-moon-fill");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
