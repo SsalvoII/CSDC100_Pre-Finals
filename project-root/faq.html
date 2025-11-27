@@ -1,1 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GenAI FAQs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ISMSI</a>
+
+<button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">GenAI FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="ethics.html" class="nav-link">AI Ethics</a>
+            </li>
+            <li class="nav-item">
+              <a href="Analogy.html" class="nav-link">Analogy</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <!--  Dark Mode Toggle -->
+          <button id="themeToggle" class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 w-100 w-lg-auto">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="accordion">
+      <li>
+        <input type="radio" name="accordion" id="faqac1" checked>
+        <label for="faqac1">What is Generative AI?</label>
+        <div class="content">
+          Generative AI is a sophisticated form of artificial intelligence designed to create original content such as text, images, audio, and videos by learning patterns and correlations within large datasets. 
+          Unlike traditional AI, which might focus on classification or prediction, generative AI synthesizes new data that has never existed before, appearing creative in its output. 
+          The technology works by encoding vast amounts of information into a structured format, often using vector spaces, which represent the relationships within data. 
+          When prompted, generative AI decodes this information to produce new, contextually relevant content, ranging from conversational text to photorealistic images. 
+          Examples include applications like ChatGPT, which can hold human-like conversations, and DALL-E, which generates images based on textual descriptions. 
+          Beyond creative generation, generative AI helps summarize vast amounts of information, automate repetitive tasks, and personalize user experiences by tailoring outputs to individual needs. 
+          This makes it valuable across industries such as marketing, healthcare, entertainment, and software development. 
+          However, the core of generative AI is its ability to generalize and innovate based on learned data, enabling a wide range of functions beyond simple data retrieval or rule-based automation.
+        </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="faqac2">
+        <label for="faqac2">How does Generative AI work?</label>
+        <div class="content">
+          Generative AI operates through complex neural networks trained on massive datasets that include text, images, videos, and other types of information. A typical model comprises two main components: an encoder and a decoder. The encoder transforms raw data inputs into an intermediate representation such as a vector embedding, capturing the essential features and relationships of the input. This intermediate form is a compressed version that the AI can efficiently process. The decoder then reads this representation to generate new content that aligns with the input prompt, creating text, images, or other media accordingly. The training process involves teaching the model to predict what comes next in a sequence—such as the next word in a sentence or the next pixel in an image—using techniques like transformers and generative adversarial networks (GANs). Recent advancements include large foundation models such as OpenAI’s GPT series and Google’s Gemini, which have broad knowledge bases and are fine-tuned for specific tasks. These models iteratively refine their outputs through feedback mechanisms to improve accuracy and coherence, making generative AI not only a tool for creating content but also for understanding complex information and context.
+        </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="faqac3">
+        <label for="faqac3">What are examples of Generative AI tools?</label>
+        <div class="content">
+          There are several widely recognized generative AI tools that demonstrate the diversity of this technology. ChatGPT is one of the most popular, offering advanced conversational abilities for tasks like writing, coding, tutoring, and customer service. DALL-E 3 specializes in generating high-quality images from textual prompts, allowing users to create artwork or visual content easily. GitHub Copilot assists programmers by suggesting code snippets and helping with debugging, accelerating software development. Synthesia allows users to create synthetic videos featuring avatars or personalized presentations. Other tools like Microsoft Copilot and Google Gemini integrate generative AI features into productivity suites, enhancing workflows by automating document creation, summarizing content, or generating ideas. These tools showcase how generative AI extends beyond creative applications into practical business and technical uses. They are characterized by their ability to quickly produce unique outputs that match user inputs across different domains, demonstrating the broad applicability of generative AI.
+        </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="faqac4">
+        <label for="faqac4">What can Generative AI do well?</label>
+        <div class="content">
+          Generative AI excels at producing diverse and original outputs that are contextually appropriate. It can summarize complex texts, translate languages, and generate drafts of documents or creative works, saving users significant time and effort. It helps break down complicated ideas into simpler explanations, making information more accessible. The technology supports personalized experiences by adapting content to fit the user’s style or preferences, enhancing engagement. Another strength lies in accelerating innovation, such as designing products, composing music, or creating advertising campaigns. In addition, generative AI can analyze vast datasets to highlight relevant insights, identify risks, or suggest improvements in various business processes. This combination of creativity, customization, and analytical ability defines generative AI’s powerful role as both a creative partner and an efficiency booster.
+        </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="faqac5">
+        <label for="faqac5">What are the limitations of Generative AI?</label>
+        <div class="content">
+          Despite its impressive capabilities, generative AI has several inherent limitations. It relies heavily on the data used during training, which means it can reproduce biases, stereotypes, or inaccuracies present in that data. The AI does not possess true understanding or consciousness, so it may generate plausible-sounding but factually incorrect or misleading content. There are risks of misuse, such as creating deepfakes, disinformation, or plagiarized works without proper attribution. Additionally, the technology can sometimes produce outputs that are inconsistent, irrelevant, or lack creativity beyond learned patterns. Ethical challenges revolve around transparency, accountability, and ensuring the technology is used in ways that respect privacy and fairness. Addressing these limitations requires ongoing improvements, human oversight, and ethical guidelines to mitigate risks and ensure responsible usage.
+        </div>
+      </li>
+    
+
+    <li>
+        <input type="radio" name="accordion" id="faqac6">
+        <label for="faqac6">What ethical issues does Generative AI raise?</label>
+        <div class="content">
+          Generative AI raises important ethical issues, including privacy concerns from the use of large datasets that may include sensitive or personal information without consent. Plagiarism is a major risk if AI-generated content is passed off as original without proper citation or disclosure. Bias in AI outputs can perpetuate harmful stereotypes or unfair treatment of certain groups, reflecting biases in training data. The accuracy of AI-generated content is another concern, as users may trust outputs that are incorrect or misleading, leading to misinformation. Intellectual property rights can also be challenged by the creation of new content based on existing work. Beyond these, the potential for AI to be used for malicious purposes, such as generating fake news or impersonations, requires careful ethical scrutiny. These challenges highlight the need for transparency, fairness, and human responsibility in the deployment of generative AI.
+        </div>
+      </li>
+    
+      <li>
+        <input type="radio" name="accordion" id="faqac7">
+        <label for="faqac7">How can we use Generative AI responsibly?</label>
+        <div class="content">
+          Responsible use of generative AI involves several key practices. Users should always verify the accuracy of AI-generated content by cross-checking with trusted sources before relying on it. Transparency is critical; individuals and organizations should disclose when content is AI-generated to maintain trust and accountability. Avoiding plagiarism means reworking AI outputs with original input, proper citation, or clearly identifying AI assistance in academic or professional contexts. It is also important to apply human judgment to interpret and filter AI content rather than accepting it at face value. Promoting fairness requires actively checking for and mitigating bias within AI outputs. Education and awareness about AI’s capabilities and limits empower users to make informed decisions. Sustainable ethical use includes adhering to legal guidelines, respecting privacy, and fostering collaborative oversight between humans and AI systems to ensure beneficial outcomes.
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="accordion" id="faqreff">
+        <label for="faqreff">References</label>
+        <div class="content">
+
+          https://www.imperial.ac.uk/admin-services/library/learning-support/generative-ai-guidance/​<br>
+
+          https://www.huit.harvard.edu/ai/guidelines​<br>
+
+          https://www.cmu.edu/teaching/technology/aitools/index.html​<br>
+
+          https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-good-academic-practice/generative-ai-faqs​<br>
+
+          https://www.ox.ac.uk/students/life/it/guidance-safe-and-responsible-use-gen-ai-tools​<br>
+
+          https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research​<br>
+
+          https://library.harrisburgu.edu/GAI_faculty​<br>
+
+          https://www.feu.edu.ph/student-guidelines-on-the-use-of-general-artificial-intelligence/​<br>
+
+          https://information-services.ed.ac.uk/computing/comms-and-collab/elm/generative-ai-guidance-for-students/using-generative<br>
+
+        </div>
+      </li>
+    </ul>
+
+     
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center position-relative p-5 mt-4">
+      <div class="container">
+        <p class="lead mb-0">Copyright &copy; 2025 ISMSI</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+<!-- 🌙 Dark Mode Script -->
+    <script>
+      const body = document.body;
+      const toggleBtn = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.classList.replace("bi-sun-fill", "bi-moon-fill");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
 
