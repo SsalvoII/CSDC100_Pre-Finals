@@ -1,1 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analogy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">ISMSI</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="faq.html" class="nav-link">GenAI FAQs</a></li>
+            <li class="nav-item"><a href="ethics.html" class="nav-link">AI Ethics</a></li>
+            <li class="nav-item"><a href="Analogy.html" class="nav-link">Analogy</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
+          </ul>
+
+          <!-- Dark Mode Toggle -->
+          <button id="themeToggle" class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 w-100 w-lg-auto">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT SECTION -->
+    <section class="p-5">
+      <div class="container">
+
+        <div class="custom-box p-4">
+          <h2 class="mb-3">Analogy</h2>
+
+          
+          <div class="inner-box p-3">
+            <p>
+              <h6>You are organizing your wedding, the documentation team is asking 40k for the wedding package. They will use an Iphone 16 pro max to cover the event and CapCut for the same day edit video. The documentation team has 2 years of experience and has an above average portfolio. Would you agree to that deal? Explain your answer and justify the integrity of their work. Reflect on the integrity, creativity, skill level of the “vibe” coder</h6><br>
+              No, I would not agree to the 40k deal for the wedding documentation package.<br><br>
+<a>
+-With only 2 years of experience, this team falls into the emerging professional category, where typical wedding videography packages range from ₱30,000 to ₱40,000 for budget options including basic coverage and edits, or $1,500-$4,000 internationally for similar skill levels. Charging the upper end of mid-range pricing (₱45,000+) without more seasoned expertise or premium add-ons like drone footage feels inflated, especially since their portfolio is merely "above average" rather than exceptional. This suggests they're overvaluing their current market position, potentially leaving room for negotiation or better value elsewhere.​
+</a><br><br>
+<a>
+- Using an iPhone 16 Pro Max, while capable for high-quality video, does not match the dedicated cinema cameras or multi-camera rigs used by established videographers, limiting low-light performance, stabilization, and cinematic depth expected at this price. CapCut excels for quick same-day edits and social media teasers due to its speed and AI features, but professional wedding films demand advanced software like Premiere Pro for precise color grading, multicam syncing, and export control. These consumer tools indicate efficiency for entry-level work but undermine the integrity of delivering a polished, heirloom-quality product worth 40k.​​
+</a><br>
+<a>
+-Two years of experience means they've likely handled fewer than 50 events, lacking the proven ability to manage high-stakes variables like weather, timelines, or emotional moments under pressure, which seasoned teams master. An above-average portfolio shows promise but doesn't guarantee creativity or the "vibe" – that intuitive capture of atmosphere, storytelling flair, and emotional resonance – needed for a once-in-a-lifetime event; true integrity comes from consistent client testimonials and refined artistry beyond basic competence. Opting for this risks subpar results on your wedding day, where reliability trumps potential savings.
+</a>              
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center position-relative p-5 mt-4">
+      <div class="container">
+        <p class="lead mb-0">Copyright &copy; 2025 ISMSI</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- DARK MODE SCRIPT -->
+    <script>
+      const body = document.body;
+      const toggleBtn = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.classList.replace("bi-sun-fill", "bi-moon-fill");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
 
